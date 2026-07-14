@@ -1,31 +1,102 @@
-<div class="player">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="controls">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <button id="back">◀</button>
+<title>Interview with Customs Officer</title>
 
-        <button id="play" class="play">
-            ▶
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="card">
+
+    <img src="map.jpg" class="map" alt="Map">
+
+
+    <h1>Interview with Customs Officer</h1>
+
+
+    <audio id="audio" preload="metadata">
+        <source src="./interview.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <div class="player">
+
+
+        <div class="controls">
+
+            <button id="back">
+                ↺
+            </button>
+
+
+            <button id="play" class="play">
+                ▶
+            </button>
+
+
+            <button id="forward">
+                ↻
+            </button>
+
+        </div>
+
+
+
+        <div class="time">
+
+            <span id="current">
+                0:00
+            </span>
+
+
+            <input type="range" id="progress" value="0">
+
+
+            <span id="duration">
+                0:00
+            </span>
+
+        </div>
+
+
+
+        <button id="volume">
+            🔊
         </button>
 
-        <button id="forward">▶</button>
 
     </div>
 
 
-    <div class="time">
 
-        <span id="current">0:00</span>
+    <div class="buttons">
 
-        <input type="range" id="progress" value="0">
+        <a href="interview.mp3" download>
+            ⬇ Download
+        </a>
 
-        <span id="duration">0:00</span>
+
+        <button id="share">
+            📤 Share
+        </button>
 
     </div>
 
-
-    <button id="volume">
-        🔊
-    </button>
 
 </div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
