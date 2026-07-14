@@ -1,12 +1,78 @@
+* {
+    box-sizing:border-box;
+}
+
+
+body {
+
+    margin:0;
+
+    min-height:100vh;
+
+    background:#d7eee2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:Arial, sans-serif;
+
+}
+
+
+
+.card {
+
+    width:420px;
+
+    max-width:90%;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+.map {
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+
+
+h1 {
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin:25px 0;
+
+}
+
+
+
 .player {
 
-    background:#d7e8e5;
+    background:#dceee9;
 
     padding:25px;
 
     border-radius:20px;
 
 }
+
 
 
 .controls {
@@ -22,7 +88,12 @@
 }
 
 
-.player button {
+
+.controls button {
+
+    border:none;
+
+    cursor:pointer;
 
     display:flex;
 
@@ -32,22 +103,6 @@
 
 }
 
-
-.play {
-
-    width:75px;
-
-    height:75px;
-
-    border-radius:50%;
-
-    background:white;
-
-    color:#111;
-
-    font-size:32px;
-
-}
 
 
 #back,
@@ -60,11 +115,30 @@
 
     border-radius:50%;
 
-    background:#b7d5d0;
+    background:white;
 
-    font-size:18px;
+    font-size:20px;
 
 }
+
+
+
+.play {
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:#54a879;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
 
 
 .time {
@@ -80,8 +154,52 @@
 }
 
 
+
 #progress {
 
     flex:1;
+
+}
+
+
+
+#volume {
+
+    margin-top:20px;
+
+}
+
+
+
+.buttons {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+
+
+.buttons a,
+.buttons button {
+
+    border:none;
+
+    background:#54a879;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    cursor:pointer;
 
 }
